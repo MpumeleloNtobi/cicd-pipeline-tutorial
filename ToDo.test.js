@@ -10,19 +10,25 @@ describe("ToDO", () => {
     })
     it("add an item", () => {
         todo.add("milk");
-        expect(todo.getTodo()).toEqual(["milk"]);
+        expect(todo.getTodo()).toEqual([{"id": 1, "name": "milk"}]);
     })
-    it("remove item at an index", () => {
+    it("remove item by id", () => {
         todo.add("milk");
         todo.add("egg");
-        todo.remove(1);
-        expect(todo.getTodo()).toEqual(["milk"]);
+        todo.remove(2);
+        expect(todo.getTodo()).toEqual([{"id": 1, "name": "milk"}]);
     })
-    it("update item at an index", () => {
+    it("update item by id", () => {
         todo.add("milk");
         todo.add("egg");
-        todo.update(0, "sugar");
-        expect(todo.getTodo()).toEqual(["sugar", "egg"]);
+        todo.update(1, "sugar");
+        expect(todo.getTodo()).toEqual([{"id": 1, "name": "sugar"}, {"id": 2, "name": "egg"}]);
+    })
+    it("try update an item by a non-existance id", () => {
+        todo.add("milk");
+        todo.add("egg");
+        todo.update(3, "sugar");
+        expect(todo.getTodo()).toEqual([{"id": 1, "name": "milk"}, {"id": 2, "name": "egg"}]);
     })
     it("clear list", () => {
         todo.add("milk");

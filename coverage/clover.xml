@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1745925878548" clover="3.2.0">
-  <project timestamp="1745925878548" name="All files">
-    <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="0" coveredelements="0" complexity="0" loc="0" ncloc="0" packages="0" files="0" classes="0"/>
+<coverage generated="1745935003787" clover="3.2.0">
+  <project timestamp="1745935003787" name="All files">
+    <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8" elements="20" coveredelements="20" complexity="0" loc="10" ncloc="10" packages="1" files="1" classes="1"/>
+    <file name="ToDo.js" path="/home/sam/Documents/Wits/2025/SM1/COMS3009A-SD/azure-deployment/todo/ToDo.js">
+      <metrics statements="10" coveredstatements="10" conditionals="2" coveredconditionals="2" methods="8" coveredmethods="8"/>
+      <line num="3" count="6" type="stmt"/>
+      <line num="4" count="6" type="stmt"/>
+      <line num="7" count="6" type="stmt"/>
+      <line num="10" count="9" type="stmt"/>
+      <line num="11" count="9" type="stmt"/>
+      <line num="14" count="2" type="stmt"/>
+      <line num="17" count="3" type="stmt"/>
+      <line num="18" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="1" type="stmt"/>
+      <line num="23" count="1" type="stmt"/>
+    </file>
   </project>
 </coverage>

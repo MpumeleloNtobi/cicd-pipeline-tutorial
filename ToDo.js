@@ -1,19 +1,23 @@
 export default class ToDo {
     constructor() {
         this.todo = [];
-        this.nextID = 1;
+        this.id = 1;
     }
     getTodo() {
         return this.todo;
     }
     add(name) {
-        this.todo.push(name);
+        this.todo.push({"id": this.id, "name": name});
+        this.id ++;
     }
     remove(id) {
-        this.todo.splice(id, 1);
+        this.todo = this.todo.filter(item => item.id !== id);
     }
     update(id, name) {
-        this.todo.splice(id, 1, name);
+        const item = this.todo.find(item => item.id === id);
+        if (item) {
+          item.name = name;
+        }
     }
     clear() {
         this.todo = [];
