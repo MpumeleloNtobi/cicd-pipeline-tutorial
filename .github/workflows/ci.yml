@@ -1,7 +1,9 @@
 name: Continuous Integration (CI) Pipeline
 
-on: 
-  push: ["main"]
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch: 
 
 jobs:
   test:
